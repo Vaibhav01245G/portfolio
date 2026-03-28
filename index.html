@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vaibhav — Portfolio</title>
+
+  <!-- Replace favicon.png with your icon in /assets -->
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="assets/images/profile.jpeg" alt="Vaibhav" class="brand-img" />
+        <span class="brand-name">Vaibhav</span>
+      </div>
+
+      <button id="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+      <nav id="nav" class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm Vaibhav</h1>
+          <p class="lead">Pursuing B.Tech in CSE-AIML branch from Lakshmi Narain College of Technology. Using my Video editing skills to enhance my creativity and Aspiring to build practical software & machine learning projects.</p>
+          <div class="hero-cta">
+            <a class="btn" href="Vaibhav_Resume.pdf" download>Download Resume</a>
+            <a class="btn btn-outline" href="#projects">View Projects</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <img src="assets/images/profile3.jpeg" alt="Vaibhav profile" class="profile-large" />
+          <div class="card-badges">
+            <span>AI / ML</span>
+            <span>Web Dev</span>
+            <span>C++ and DSA</span>
+            <span>Python</span>
+            <span>Video Editing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I'm Vaibhav — a Computer Science & Engineering student specializing in AI & Machine Learning.
+          I enjoy turning ideas into software: building web apps, training small ML models, and automating
+          repetitive tasks. I aim to learn continuously and contribute to open-source projects.
+          I am also sharpening my video editing skills and open for all types of freelancing works.I shoot 
+          and edit those videos for fun and post it on social media platforms. 
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+          <div class="skill">
+            <h3>Languages</h3>
+            <p>Python · C++ · JavaScript</p>
+          </div>
+          <div class="skill">
+            <h3>Web</h3>
+            <p>HTML · CSS · React (basic)</p>
+          </div>
+          <div class="skill">
+            <h3>AI / ML</h3>
+            <p>NumPy · Pandas · TensorFlow / PyTorch (intro)</p>
+          </div>
+          <div class="skill">
+            <h3>Tools</h3>
+            <p>Git · VS Code</p>
+          </div>
+          <div class="skill">
+            <h3>Video Editing</h3>
+            <p> Adobe Premiere Pro · DaVinci Resolve · VN(Mobile)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+           <div class="project-body">
+             <h3>Video Editing</h3>
+             <p>Collection of my creative edits.</p>
+             <div class="project-links">
+              <a href="https://drive.google.com/drive/folders/1jOZqg2j5Um8xYh0V-g29GusVJOTrwt9x?usp=drive_link" target="_blank" rel="noopener noreferrer">View on Google Drive</a>
+             </div>
+           </div>
+           </article>
+
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-body">
+              <h3>Personal Portfolio Website</h3>
+              <p>A website to showcase my work and projects.
+                You are already using it. </p>
+              <div class="project-links">
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 placeholder -->
+          <article class="project-card placeholder">
+            <div class="project-body">
+              <h3>Project Title</h3>
+              <p>Short description — replace with your project details and screenshot.</p>
+              <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#" class="muted">Live</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to collaborate or have any questions, reach out!</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:vaibhav912p@gmail.com">vaibhav912p@gmail.com</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h3>Connect</h3>
+            <p>
+              <a href="https://www.linkedin.com/in/vaibhav-prasad-436362320/" target="_blank">LinkedIn</a>
+              <a href="https://www.instagram.com/_vaibhav_prasad/" target="_blank">Instagram</a>
+            </p>
+          </div>
+
+          <form class="contact-form" onsubmit="handleContact(event)">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required />
+            </label>
+
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required />
+            </label>
+
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button type="submit" class="btn">Send</button>
+            <p id="form-msg" class="form-msg" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Vaibhav — Built with ❤️</p>
+      <div class="footer-links">
+        <a href="Vaibhav_Resume.pdf" download>Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
